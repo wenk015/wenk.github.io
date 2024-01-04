@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Webpage</title>
   <style>
-   body {
-          font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-image: 'star.jpg'
+    body {
+      background-image: url('image/star.jpg');
       background-size: cover;
+      background-repeat: no-repeat;
       background-position: center;
-        }
+      margin: 0;
+    }
 
     header {
       text-align: center;
@@ -18,12 +19,14 @@
       margin-top: 50px;
       color: white;
     }
+
     h2 {
       text-align: center;
       font-size: 24px;
       margin-top: 20px;
       color: white;
     }
+
     .button {
       display: block;
       margin: 20px auto 0;
@@ -55,22 +58,22 @@
     .button:nth-child(1) {
       top: 30%;
       right: 30%;
-      background-color: #334bd6; #face
+      background-color: #334bd6;
     }
 
     .button:nth-child(2) {
       top: 30%;
       right: 10%;
-      background-color: #2ec500; #line
+      background-color: #2ec500;
     }
 
     .button:nth-child(3) {
       top: 30%;
       right: 20%;
-      background-color: #d4180b; #inst 
+      background-color: #d4180b;
     }
 
-    .button::after {
+    .button:nth-child(1)::after {
       content: "Facebook";
     }
 
@@ -81,10 +84,11 @@
     .button:nth-child(3)::after {
       content: "Instagram";
     }
+
     footer {
-    text-align: center;
-    margin-top: 50px;
-    color: white;
+      text-align: center;
+      margin-top: 50px;
+      color: white;
     }
   </style>
 </head>
@@ -95,9 +99,7 @@
     <a href="https://www.facebook.com/" class="button"></a>
     <a href="https://www.twitter.com/" class="button"></a>
     <a href="https://www.instagram.com/" class="button"></a>
-    <div class=".profile-pic ">
-      <img src="image/大頭照.jpg" alt="我的照片">
-
+    <img src="image/大頭照.jpg" alt="your-image-description" class="profile-pic">
   </div>
   <footer>
     <p>就讀院所:高雄科技大學</p>
